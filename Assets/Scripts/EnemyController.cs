@@ -26,11 +26,10 @@ public class EnemyController : MonoBehaviour
             enemyPatrol.Patrol();
         }
     }
-
         /*
         [SerializeField] private EnemyMovement movement; //Ref  al script de movimiento 
-        [SerializeField] private EnemyDetection detection; //Ref al script de detección 
-        [SerializeField] private EnemyAnimation animation; //Ref script de animación 
+        [SerializeField] private EnemyDetection detection; //Ref al script de detecciï¿½n 
+        [SerializeField] private EnemyAnimation animation; //Ref script de animaciï¿½n 
 
         void Update()
         {

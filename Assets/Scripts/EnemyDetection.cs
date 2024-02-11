@@ -59,6 +59,7 @@ public class EnemyDetection : MonoBehaviour
     {
         Vector2 targetDir = target.position - transform.position;
         float angle = Vector2.Angle(targetDir, transform.right);
+        angle = Mathf.Abs(angle);
 
         return angle;
     }
