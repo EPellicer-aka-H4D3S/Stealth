@@ -2131,7 +2131,7 @@ MonoBehaviour:
     m_Bits: 256
   whatIsVisible:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 768
   detectionRange: 4
   visionAngle: 70
 --- !u!114 &2108089970
