@@ -15,7 +15,7 @@ public class EnemyChase : MonoBehaviour
 
     public void Chase()
     {
-        transform.position = Vector2.MoveTowards(transform.position,enemyController.player.transform.position , moveSpeed * Time.deltaTime);
         transform.LookAt(enemyController.player.transform.position);
+        transform.position = Vector2.MoveTowards(transform.position,enemyController.player.transform.position , moveSpeed * Time.deltaTime);
     }
 }
