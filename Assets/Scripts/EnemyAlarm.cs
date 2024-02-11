@@ -5,9 +5,13 @@ using UnityEngine;
 
 public class EnemyAlarm : MonoBehaviour
 {
-    [SerializeField] private EnemyDetection detection
+    [SerializeField] private EnemyDetection enemyDetection;
+    SpriteRenderer alarmRenderer;
 
-    SpriteRenderer _alarmRenderer;
+    private void Awake()
+    {
+        enemyDetection = GetComponent<EnemyDetection>();
+    }
 
     public void PlayerDetected()
     {
@@ -21,8 +25,8 @@ public class EnemyAlarm : MonoBehaviour
 
     private void ChangeColor(Color color)
     {
-        if (_alarmRenderer == null) _alarmRenderer = GetComponent<SpriteRenderer>();
+        if (alarmRenderer == null) alarmRenderer = GetComponent<SpriteRenderer>();
 
-        _alarmRenderer.color = color;
+        alarmRenderer.color = color;
     }
 }
