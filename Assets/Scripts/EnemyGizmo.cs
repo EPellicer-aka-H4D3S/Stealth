@@ -32,8 +32,6 @@ public class EnemyGizmo : MonoBehaviour
         if (player != null) Gizmos.DrawLine(transform.position, player.position);
         Gizmos.color = Color.white;
 
-        Gizmos.DrawWireSphere(transform.position, visionRange);
-
         Gizmos.color = Color.red;
         var direction = Quaternion.AngleAxis(visionAngle / 2, transform.forward)
             * transform.right;

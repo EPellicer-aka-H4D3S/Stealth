@@ -7,7 +7,7 @@ public class EnemyPatrol : MonoBehaviour
 
     [SerializeField] private float moveSpeed = 3f;
     [SerializeField] private Transform[] patrolPoints;
-    private int currentPatrolIndex = 0;
+    private int currentPatrolIndex = 1;
 
     public void Patrol()
     {
