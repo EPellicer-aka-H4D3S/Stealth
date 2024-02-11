@@ -9,8 +9,21 @@ public class EnemyAlarm : MonoBehaviour
     SpriteRenderer alarmRenderer;
 
     private void Awake()
+    {   
+        enemyDetection = GetComponentInParent<EnemyDetection>();
+        alarmRenderer = GetComponent<SpriteRenderer>();
+    }
+
+     private void Update()
     {
-        enemyDetection = GetComponent<EnemyDetection>();
+        if (enemyDetection != null && enemyDetection.DetectPlayers().Length > 0)
+        {
+            PlayerDetected();
+        }
+        else
+        {
+            PlayerLeft();
+        }
     }
 
     public void PlayerDetected()
