@@ -8,11 +8,13 @@ public class EnemyGizmo : MonoBehaviour
     [SerializeField] private EnemyDetection enemyDetection;
     private Transform player;
     private float visionRange;
+    private float visionAngle;
 
     public void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         visionRange = GetComponent<EnemyDetection>().detectionRange;
+        visionAngle = GetComponent<EnemyDetection>().visionAngle;
     }
 
     private void Update()
@@ -28,6 +30,18 @@ public class EnemyGizmo : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, visionRange);
         Gizmos.color = Color.yellow;
         if (player != null) Gizmos.DrawLine(transform.position, player.position);
+        Gizmos.color = Color.white;
+
+        Gizmos.DrawWireSphere(transform.position, visionRange);
+
+        Gizmos.color = Color.red;
+        var direction = Quaternion.AngleAxis(visionAngle / 2, transform.forward)
+            * transform.right;
+        Gizmos.DrawRay(transform.position, direction * visionRange);
+        var direction2 = Quaternion.AngleAxis(-visionAngle / 2, transform.forward)
+            * transform.right;
+        Gizmos.DrawRay(transform.position, direction2 * visionRange);
+
         Gizmos.color = Color.white;
     }
 
