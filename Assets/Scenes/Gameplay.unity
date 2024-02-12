@@ -635,7 +635,7 @@ MonoBehaviour:
   whatIsVisible:
     serializedVersion: 2
     m_Bits: 768
-  detectionRange: 3
+  detectionRange: 4
   visionAngle: 90
 --- !u!114 &276948532
 MonoBehaviour:
@@ -662,7 +662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f97535ab881cac43ba4c8df27b82f4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 2
   patrolPoints:
   - {fileID: 2065180500}
   - {fileID: 758488174}
@@ -1459,6 +1459,7 @@ GameObject:
   - component: {fileID: 595306066}
   - component: {fileID: 595306065}
   - component: {fileID: 595306064}
+  - component: {fileID: 595306068}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1550,6 +1551,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &595306068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595306063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837bf986e7b4a0244a132564d1670935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1701691613}
+  endingPoint: {fileID: 906076711}
+  finalTimeText: {fileID: 0}
+  timeText: {fileID: 615651457}
 --- !u!1 &615651455
 GameObject:
   m_ObjectHideFlags: 0
@@ -2462,8 +2479,8 @@ GameObject:
   - component: {fileID: 1701691620}
   - component: {fileID: 1701691615}
   - component: {fileID: 1701691614}
-  - component: {fileID: 1701691621}
   - component: {fileID: 1701691622}
+  - component: {fileID: 1701691621}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
