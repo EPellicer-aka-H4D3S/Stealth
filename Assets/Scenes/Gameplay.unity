@@ -298,26 +298,14 @@ GameObject:
   - component: {fileID: 28460279}
   - component: {fileID: 28460278}
   - component: {fileID: 28460277}
-  - component: {fileID: 28460276}
+  - component: {fileID: 28460280}
   m_Layer: 9
   m_Name: Sofa1
-  m_TagString: Untagged
+  m_TagString: SneakableObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &28460276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 28460275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &28460277
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -393,7 +381,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 2e2b5dd3ca71f9846bd3bdadc98f1844, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -420,6 +408,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!114 &28460280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28460275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39675f6a7587e0c449e769f900bc50ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &106113510
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,7 +1244,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 565794547}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Script: {fileID: 11500000, guid: 39675f6a7587e0c449e769f900bc50ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!58 &565794549
@@ -1322,7 +1322,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 432c91386e40179498ed95b17219839e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2165,7 +2165,7 @@ GameObject:
   - component: {fileID: 1351731620}
   m_Layer: 9
   m_Name: Sofa3
-  m_TagString: Untagged
+  m_TagString: SneakableObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2179,7 +2179,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1351731619}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Script: {fileID: 11500000, guid: 39675f6a7587e0c449e769f900bc50ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!58 &1351731621
@@ -2257,7 +2257,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 5c15fd7a3c6bbbd47a681f7f1d94d6b3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2298,7 +2298,7 @@ GameObject:
   - component: {fileID: 1457873242}
   m_Layer: 9
   m_Name: Sofa2
-  m_TagString: Untagged
+  m_TagString: SneakableObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2312,7 +2312,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1457873241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Script: {fileID: 11500000, guid: 39675f6a7587e0c449e769f900bc50ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!58 &1457873243
@@ -2390,7 +2390,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 3ba8a65b0da2fcc4e87d14e3a80bfaa3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2464,6 +2464,7 @@ GameObject:
   - component: {fileID: 1701691614}
   - component: {fileID: 1701691621}
   - component: {fileID: 1701691622}
+  - component: {fileID: 1701691623}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -2659,6 +2660,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5976ddab0c4646b48946ad7fefa29e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1701691623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701691613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 705d0b57a653a2c4a825fe07804fd7bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1865121214
 GameObject:
   m_ObjectHideFlags: 0
@@ -2804,7 +2817,7 @@ GameObject:
   - component: {fileID: 1972440892}
   m_Layer: 9
   m_Name: Couch
-  m_TagString: Untagged
+  m_TagString: SneakableObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2818,7 +2831,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1972440891}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Script: {fileID: 11500000, guid: 39675f6a7587e0c449e769f900bc50ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!58 &1972440893
@@ -2896,7 +2909,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ef47caeef43846a41ab9cbf6205c3fa5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3017,7 +3030,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 432c91386e40179498ed95b17219839e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3053,7 +3066,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2039102913}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Script: {fileID: 11500000, guid: 39675f6a7587e0c449e769f900bc50ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2055911687
