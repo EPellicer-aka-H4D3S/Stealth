@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class TileScreen : MonoBehaviour
+public class ScreenManager : MonoBehaviour
 {
 
     private float time;
@@ -20,6 +20,7 @@ public class TileScreen : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         endingPoint = GameObject.Find("Food");
+        if (SceneManager.GetActiveScene().name=="Ending") { finalTimeText.text = "You won in " + Math.Truncate((decimal)PlayerPrefs.GetFloat("time")) + " seconds"; }
     }
 
     void Update()
@@ -28,7 +29,7 @@ public class TileScreen : MonoBehaviour
         {
             SceneManager.LoadScene("Gameplay");
         }
-        if (SceneManager.GetActiveScene().buildIndex==1)
+        if (SceneManager.GetActiveScene().name=="Gameplay")
         {
             time += Time.deltaTime;
             distance += player.GetComponent<Rigidbody2D>().velocity.magnitude * Time.deltaTime;
@@ -36,8 +37,10 @@ public class TileScreen : MonoBehaviour
             distanceText.text = "Distance: " + Math.Truncate((decimal)distance) + " units";
             if (endingPoint.GetComponent<Collider2D>().IsTouching(player.GetComponent<Collider2D>()))
             {
+                PlayerPrefs.SetFloat("time", time);
                 SceneManager.LoadScene("Ending");
-                finalTimeText.text = "You won in " + Math.Truncate((decimal)time) + " seconds";
+                
+                Debug.Log(finalTimeText);
             }
         }
         if (Input.GetKeyDown(KeyCode.Escape))

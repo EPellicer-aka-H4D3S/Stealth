@@ -410,6 +410,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837bf986e7b4a0244a132564d1670935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  endingPoint: {fileID: 0}
+  timeText: {fileID: 0}
+  distanceText: {fileID: 0}
+  finalTimeText: {fileID: 170455398}
 --- !u!1 &1504454541
 GameObject:
   m_ObjectHideFlags: 0
