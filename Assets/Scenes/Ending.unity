@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 1141260567}
   - component: {fileID: 1141260566}
   m_Layer: 5
-  m_Name: Subtitile
+  m_Name: Subtitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -480,8 +480,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   endingPoint: {fileID: 0}
-  finalTimeText: {fileID: 1141260566}
   timeText: {fileID: 0}
+  distanceText: {fileID: 0}
+  finalTimeText: {fileID: 1141260566}
 --- !u!1 &1965858692
 GameObject:
   m_ObjectHideFlags: 0

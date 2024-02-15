@@ -9,11 +9,13 @@ public class TileScreen : MonoBehaviour
 {
 
     private float time;
+    private float distance;
     public GameObject player;
     public GameObject endingPoint;
-    [SerializeField] private Text finalTimeText;
     [SerializeField] private Text timeText;
-
+    [SerializeField] private Text distanceText;
+    [SerializeField] private Text finalTimeText;
+    
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -29,7 +31,9 @@ public class TileScreen : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex==1)
         {
             time += Time.deltaTime;
+            distance += player.GetComponent<Rigidbody2D>().velocity.magnitude * Time.deltaTime;
             timeText.text = "Time: " + Math.Truncate((decimal)time) + " sec";
+            distanceText.text = "Distance: " + Math.Truncate((decimal)distance) + " units";
             if (endingPoint.GetComponent<Collider2D>().IsTouching(player.GetComponent<Collider2D>()))
             {
                 SceneManager.LoadScene("Ending");
